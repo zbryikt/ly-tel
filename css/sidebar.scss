@@ -7,7 +7,6 @@
 ul#links{
   @media only screen and (max-width: 760px){
     background-color: yellow;
-
   }
 }
 .sidebar {
@@ -23,25 +22,38 @@ ul#links{
   float: left;
   display: inline-block;
   text-decoration: none;
+  h2 {
+    margin-top: 5px;
+  }
 }
 .sidebar ul {
   margin-bottom: 21px;
+  list-style-position: inside;
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 3px;
+  a {
+    color: #444;
+  }
 }
 .sidebar li.title {
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 3px;
   padding-top: 9px;
+  list-style-type: none;
+  a {
+    color: #444;
+  }
 }
 .sidebar li.title .small {
   font-size: 15px;
   padding-left: 5px;
 }
 .sidebar li {
-  list-style-type: none;
   font-size: 16px;
 }
 .sidebar li a {
-  color: black;
+  color: #777;
 }
 .sidebar li a:hover {
   text-decoration: none;
