@@ -30,22 +30,24 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
 }
 
 #results article{
-  &:before{
-    display:block !important;
-  }
-  padding: 0.5em 0;
-  div.col-xs-1{
-    img{
-      display:inline-block;
+    padding: 0.5em 0;
+  @media only screen and (max-width: 760px){
+    &:before{
+      display:block !important;
     }
-  }
-  header{
-    width:80% !important;
-    h1{
-      width:50%;
+    div.col-xs-1{
+      img{
+        display:inline-block;
+      }
     }
-    h2{
-      width:50%;
+    header{
+      width:80% !important;
+      h1{
+        width:50%;
+      }
+      h2{
+        width:50%;
+      }
     }
   }
 }
