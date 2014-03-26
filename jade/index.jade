@@ -14,35 +14,37 @@ html
         .topbar-content
           a.logo.centered(href='/') 三動作護台灣
     //
-    .sidebar
-      include ./switch
+    .wrapper
+      .sidebar
+        include ./switch
 
-    main#main.container
-      include:md ../md/step.md
+      main#main.container
+        include:md ../md/step.md
 
-      h1#ly 立委列表
+        h1#ly 立委列表
 
 
-      #results
-        p.loading.text-center
-          img(src='images/loading.gif' alt='Loading...')
+        #results
+          p.loading.text-center
+            img(src='images/loading.gif' alt='Loading...')
 
     footer#footer
       .container
-        .row
-          .col-xs-8
+          .footer-logo
+            a.g0v(href='http://g0v.tw', target='_blank', title='g0v 零時政府') g0v
+          .footer-info
             p.copyright
               img(src='/images/cc.png')
               span
                 | 本服務圖文內容採用
-                a(href='http://creativecommons.org/licenses/by/4.0/deed.zh_TW', rel='license', target="_blank") 創用 CC 姓名標示 4.0 國際授權條款
+                a(href='http://creativecommons.org/licenses/by/4.0/deed.zh_TW', rel='license', target='_blank') 創用 CC 姓名標示 4.0 國際授權條款
                 | 授權；
                 br
                 | 程式碼部分以
-                a(href='http://github.com/chilijung/ly-tel', target="_blank") MIT 授權條款
+                a(href='http://github.com/chilijung/ly-tel', target='_blank') MIT 授權條款
                 | （X11）授權。
-          .col-xs-4
-            a.g0v.pull-right(href='http://g0v.tw', target='_blank', title='g0v 零時政府') g0v
+
+
 
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
     script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')

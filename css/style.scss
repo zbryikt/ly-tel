@@ -13,6 +13,10 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
     padding:20px 0;
     position:relative;
 }
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+}
 
 .loading{
   margin: 5em;
@@ -69,19 +73,11 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol{
   font-weight: bold;
 }
 
-.copyright{
-text-align:center;
-font-size:13px;
-padding:10px;
-line-height:1.4em;
-}
-
 #topbar {
   background: #3a3939;
-  height: 67px;
   text-align: center;
   .topbar-content{
-    padding-top: 23px;
+    padding: 24px 0;
   }
 }
 #topbar .logo {
@@ -142,7 +138,7 @@ line-height:1.4em;
 
   @media only screen and (min-width: 760px){
     padding-left: 22em;
-    margin-top: 3em;
+    margin-top: 24px;
   }
   // width: 51em;
 }
@@ -190,11 +186,18 @@ main .md p {
 
 /* footer */
 #footer {
+  margin-top: 36px;
+  padding: 36px 0;
+  clear: both;
   position: relative;
   background-color: #3a3939;
   color: #c7c7c7;
-  height: 100px;
+  // height: 100px;
   overflow: hidden;
+}
+#footer .container {
+  padding: 0 16px;
+  max-width: 760px;
 }
 
 #footer a {
@@ -202,18 +205,28 @@ main .md p {
 }
 
 #footer .copyright {
-  line-height: 100px;
+  font-size:13px;
+  line-height:1.4em;
   margin: 0;
+  text-align: center;
+}
+#footer .copyright img {
+  // line-height: 100px;
+  display: block;
+  margin: 0 auto 12px;
 }
 #footer .copyright span {
   vertical-align: middle;
-  margin-left: 20px;
   letter-spacing: 1px;
   line-height: 1.5;
   font-size: 12px;
   display: inline-block;
 }
+#footer .footer-logo {
+  margin-bottom: 12px;
+}
 #footer .g0v {
+  display: block;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -223,5 +236,23 @@ main .md p {
   background-position: 50% 50%;
   width: 173px;
   height: 32px;
-  height: 100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  #footer .copyright {
+    text-align: left;
+  }
+  #footer .copyright img {
+  line-height: 32px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+  #footer .copyright span {
+    margin-left: 20px;
+  }
+  #footer .footer-logo {
+    margin-bottom: 0;
+    float: right;
+  }
 }
