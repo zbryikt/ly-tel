@@ -46,10 +46,10 @@
 
 <div id="img-instruction">
     <a id="action1"></a>
-        <img src="/images/step/step1.png"/>
+        <img src="/ly-tel/images/step/step1.png"/>
      
     <a id="action2"></a>
-        <img src="/images/step/step2.png"/>
+        <img src="/ly-tel/images/step/step2.png"/>
         <div style="width: 700px; margin-left: 250px;">
             <button class="btn btn-warning btn-lg" onclick="location.href='#ly'">
                 查詢立委列表
@@ -57,7 +57,7 @@
         </div>
      
     <a id="action3"></a>
-        <img src="/images/step/step3.png"/>
+        <img src="/ly-tel/images/step/step3.png"/>
 </div>
 
 <a id="link"></a>
